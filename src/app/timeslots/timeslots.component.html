@@ -1,8 +1,10 @@
 <div class="col-4" id="timeList">
     <div class="progress" *ngFor="let time of times">
-        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+        <div class="progress-bar" role="progressbar" aria-valuenow={{time.text}}
         aria-valuemin="0" aria-valuemax="100" style={{time.style}}>
-          {{time.text}}
+        {{time.text}}:00 
         </div>
       </div>
 </div>
+
+

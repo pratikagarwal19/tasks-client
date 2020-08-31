@@ -22,8 +22,8 @@ export class TimeslotsComponent implements OnInit {
 
     for(let i=0;i<=this.duration;i++){
       this.times.push({
-        text:hours+i,
-        style: "width:"+stringify(i/this.duration*100)+"%;background-color:hsl(240,0%,"+stringify((1-i/this.duration)*100)+"%);" + "color:hsl(240,0%,"+stringify((i/this.duration)*100)+"%);"
+        text:stringify(hours+i),
+        style: "width:"+stringify(i/this.duration*100)+"%;background-color:hsl(240,0%,0%);"
       });
     }
   }
