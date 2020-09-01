@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-cards',
@@ -13,7 +14,16 @@ export class CardsComponent implements OnInit {
     {style:"background-color:red"},
     {style:"background-color:green"},
     {style:"background-color:blue"},
+    {style:"background-color:blue"},
+    {style:"background-color:blue"},
+    {style:"background-color:blue"},
+    {style:"background-color:blue"},
+    {style:"background-color:blue"},
   ];
+
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
+  }
 
   constructor() { }
 
