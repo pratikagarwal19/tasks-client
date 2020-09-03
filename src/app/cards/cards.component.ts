@@ -19,6 +19,14 @@ export class CardsComponent implements OnInit {
     {style:"background-color:blue"},
     {style:"background-color:blue"},
     {style:"background-color:blue"},
+    {style:"background-color:white"},
+    {style:"background-color:black"},
+    {style:"background-color:red"},
+    {style:"background-color:green"},
+    {style:"background-color:blue"},
+    {style:"background-color:blue"},
+    {style:"background-color:blue"},
+    {style:"background-color:blue"},
   ];
 
   drop(event: CdkDragDrop<string[]>) {
