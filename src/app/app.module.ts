@@ -12,6 +12,7 @@ import { CardsComponent } from './cards/cards.component';
 import { TimeslotsComponent } from './timeslots/timeslots.component';
 import { AddtaskComponent } from './addtask/addtask.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DatepickerComponent } from './datepicker/datepicker.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     DragndropComponent,
     CardsComponent,
     TimeslotsComponent,
-    AddtaskComponent
+    AddtaskComponent,
+    DatepickerComponent
   ],
   imports: [
     BrowserModule,
