@@ -10,6 +10,8 @@ import { DragndropComponent } from './dragndrop/dragndrop.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { CardsComponent } from './cards/cards.component';
 import { TimeslotsComponent } from './timeslots/timeslots.component';
+import { AddtaskComponent } from './addtask/addtask.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { TimeslotsComponent } from './timeslots/timeslots.component';
     HeaderComponent,
     DragndropComponent,
     CardsComponent,
-    TimeslotsComponent
+    TimeslotsComponent,
+    AddtaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
