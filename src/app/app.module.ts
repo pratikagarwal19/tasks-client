@@ -13,8 +13,10 @@ import { TimeslotsComponent } from './timeslots/timeslots.component';
 import { AddtaskComponent } from './addtask/addtask.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DatepickerComponent } from './datepicker/datepicker.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatFormFieldModule,} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input'
 
 @NgModule({
   declarations: [
@@ -35,8 +37,13 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     FontAwesomeModule,
     MatFormFieldModule,
     MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
   ],
-  providers: [],
+  providers: [
+    MatDatepickerModule,
+    MatNativeDateModule 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
