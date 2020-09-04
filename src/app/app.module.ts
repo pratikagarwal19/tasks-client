@@ -13,6 +13,8 @@ import { TimeslotsComponent } from './timeslots/timeslots.component';
 import { AddtaskComponent } from './addtask/addtask.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DatepickerComponent } from './datepicker/datepicker.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
     NgbModule,
     BrowserAnimationsModule,
     DragDropModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,4 @@
 import { Component, OnInit, enableProdMode } from '@angular/core';
-import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
 import { stringify } from '@angular/compiler/src/util';
 
 @Component({
