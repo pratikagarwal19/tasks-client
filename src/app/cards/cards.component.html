@@ -1,5 +1,5 @@
 <div id="cardlist" cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-    <div class="card example-box" *ngFor="let card of cards" style={{card.style}} cdkDrag>
+    <div class="card example-box" *ngFor="let card of cards" [style]=card.style cdkDrag>
         <div class="card-body">
             <h1 class="card-title">Panel title</h1>
           </div>
