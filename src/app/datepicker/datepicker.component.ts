@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDatepickerInputEvent} from '@angular/material/datepicker';
-import { TestFetchService } from '../test-fetch.service';
+import { TestFetchService } from '../../shared/services/test-fetch.service';
 import { DatePipe } from '@angular/common';
 
 @Component({
