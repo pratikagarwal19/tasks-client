@@ -19,6 +19,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [
     MatDatepickerModule,
-    MatNativeDateModule 
+    MatNativeDateModule,
+    DatePipe 
   ],
   bootstrap: [AppComponent]
 })
