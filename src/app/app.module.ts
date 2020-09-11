@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import {TestFetchService} from '../shared/services/test-fetch.service';
+import { GlobalService } from '../shared/services/global.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -50,7 +52,8 @@ import { DatePipe } from '@angular/common';
     MatDatepickerModule,
     MatNativeDateModule,
     DatePipe,
-    TestFetchService, 
+    TestFetchService,
+    GlobalService, 
   ],
   bootstrap: [AppComponent]
 })
