@@ -9,7 +9,7 @@ export class GlobalService {
 
   private day:Day;
 
-  getDay(): Day{ 
+  getDay(): any{ 
     return this.day;
   }
 

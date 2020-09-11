@@ -11,12 +11,19 @@ import { Day } from '../../shared/models/day';
 })
 export class DatepickerComponent implements OnInit {
 
-  day:Day  
+  day: Day = {
+    _id: "1599762600000",
+    date: "18/09/2020",
+    start: 9,
+    end: 2,
+    duration: 7,
+    tasks: [],
+  };  
   
   constructor( private testFetchService: TestFetchService,
-               private globalTestService: GlobalService) { 
+               private globalTestService: GlobalService,) { 
                 this.globalTestService.setDay(new Date().setHours(0,0,0,0).toString());
-                this.day = this.globalTestService.getDay();
+                var temp = this.globalTestService.getDay();
                }
                
 
@@ -24,9 +31,13 @@ export class DatepickerComponent implements OnInit {
     setTimeout(() =>{
       console.log("GET");
       console.log(this.globalTestService.getDay());
+      this.day = this.globalTestService.getDay();
       console.log(this.day);
-    },5000)
+    },5000);
+ 
   }
+
+  
   
 
   addEvent(event: MatDatepickerInputEvent<Date>) {
